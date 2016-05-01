@@ -5,7 +5,8 @@ Application for Patrick Schlumberger Socha
 
 
 - This Java application makes use of JUnit, and the Spark API framework.
-- The web UI makes use of the Zurb Framework and JQuery. It was developed on Ubuntu with Open_JDK version 1.8.0_66.
+- Developed on Ubuntu with Open_JDK version 1.8.0_66.
+- The web UI makes use of the Zurb Framework and JQuery.
 
 
 Please find below screenshots of the web UI in action:
