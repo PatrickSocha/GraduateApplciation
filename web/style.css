@@ -1,0 +1,18 @@
+.test {
+	background-color: black;
+}
+
+
+hr.dotted {
+    max-width: 75rem;
+    height: 0;
+    border: 0px 0px 1px 0px solid #cacaca;
+    margin: 1.25rem auto;
+    clear: both;
+    border-style: dashed;
+    margin: 2rem 0;
+}
+
+.inlinePara {
+	display: inline;
+}

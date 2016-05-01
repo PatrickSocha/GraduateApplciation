@@ -12,10 +12,15 @@ public class Main {
     	Store store = new Store();
     	Cart cart = new Cart(store, userCart);
     	
+    	// For all API end-points allow Cross Origin Resource Sharing (CORS)
+    	before((req, res) -> res.header("Access-Control-Allow-Origin", "*"));
+    	
+    	// End-points
     	get("/user/cart", (req, res) -> cart.getUserCart());
     	get("/user/toPay", (req, res) -> cart.getUserToPay());
-    	get("/item/add/:itemID", (req, res) -> cart.addItem(req.params(":itemID")));
+    	post("/user/addToCart", (req, res) -> cart.addItem(req.queryParams("itemID")));
     	get("/item/info/:itemID", (req, res) -> store.printItem(req.params(":itemID")));
+    	get("/item/list", (req, res) -> store.getItemList());
     }
     
 }

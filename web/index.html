@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Shopping Cart!</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+	<div class="row">
+
+		<div class="row">
+
+			<div class="medium-6 columns medium-centered text-center">
+				<h2>Some Shop Name</h2>
+				<h5 class="subheader">
+					Total: <p class="price inlinePara"></p> &nbsp;
+					Discount: <p class="discount inlinePara"></p> &nbsp;
+					To be paid: <p class="priceWithDiscount inlinePara"></p>
+				</h5>
+				<h6><p class="usersCart"></p></h6>
+			</div>
+
+			<hr class="dotted">
+
+			<div class="medium-9 medium-centered showProducts"></div>
+
+		</div>
+
+	</div>
+
+</body>
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+<script type='text/javascript' src='frontend.js'></script>
+<script>
+window.onload = function(){
+	getProducts();
+}
+</script>
+
+</html>

@@ -45,6 +45,7 @@ public class Cart {
 	
 	public String addItem(String itemID){
 		
+		System.out.println("Posted Item ID: " + itemID);
 		
 		try {
 			Store.Item product = store.getProduct(Integer.parseInt(itemID));

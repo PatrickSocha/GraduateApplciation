@@ -47,6 +47,10 @@ public class Store {
 		}
 	}	
 	
+	public String getItemList(){
+		return gson.toJson(products);
+	}
+	
 	public int getProductPrice(int itemID){
 		return products.get(itemID).price;
 	}
