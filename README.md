@@ -11,6 +11,6 @@ Application for Patrick Schlumberger Socha
 
 Please find below screenshots of the web UI in action:
 
-![Empty Cart](https://i.imgur.com/lySECAS.png)
-![Butter Butter Bread Promotion](https://i.imgur.com/2qD36Va.png)
-![Butter Butter Bread and 4x Milk Promotion](https://i.imgur.com/3u8BW6y.png)
+![Empty Cart](https://i.imgur.com/Npx6Vo1.png)
+![Butter Butter Bread and Four Milk Promotion](https://i.imgur.com/smutIRw.png)
+
