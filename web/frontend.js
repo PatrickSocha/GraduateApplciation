@@ -46,6 +46,8 @@ function setPrices(){
 			$( ".price" ).text((json.price/100).toFixed(2));
 			$( ".discount" ).text((json.discount/100).toFixed(2));
 			$( ".priceWithDiscount" ).text((json.priceWithDiscount/100).toFixed(2));
+			$( ".appliedDiscount" ).text("Discounts applied: " + json.appliedDiscount);
+
 		}
 	});
 
@@ -58,16 +60,8 @@ function setPrices(){
 			for (var i = 0; i < json.length; i++){
 				cart = cart + ", " + json[i].name;
 			}
-			$( ".usersCart" ).text("Your cart has: " + cart.substring(2));
+			$( ".usersCart" ).text("Your cart has: " + 	cart.substring(2));
 		}
 	});
 
 }
-
-// $(document).ready(function () {
-//     var $newdiv;
-//     for (var i = 0; i < 100; i++) {
-//         $newdiv = $('<div class="ball" />').text(i);
-//         $('.showProducts').append($newdiv);
-//     }
-// });

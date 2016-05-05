@@ -3,8 +3,9 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 
 public class Store {
+
+	/// Using pennies (int) to avoid rounding errors (floats and double)
 	class Item{
-		// Using pennies (int) to avoid rounding errors (floats and double)
 		int itemID;
 		int price;
 		String name;
@@ -22,6 +23,7 @@ public class Store {
 
 	}
 	
+	/// Creates products and adds them to products ArrayList
 	private void createProducts(){
 		// Reminder: Price is in pence!
 		butter.price = 80;
@@ -39,6 +41,12 @@ public class Store {
 		
 	}
 	
+	/**
+	Returns a singular Item based on Item ID.
+	On non-existent Item, returns an empty one.
+	@param int itemID
+	@returns Item
+	*/
 	public Item getProduct(int itemID){
 		try {
 			return products.get(itemID);
@@ -47,21 +55,32 @@ public class Store {
 		}
 	}	
 	
+	/**
+	@returns String JSON object of list of Products
+	*/
 	public String getItemList(){
 		return gson.toJson(products);
 	}
 	
+	/**
+	@param int ItemID
+	@returns int price in pence of item
+	*/
 	public int getProductPrice(int itemID){
 		return products.get(itemID).price;
 	}
 	
+	/**
+	@param String getItem
+	@returns String JSON object of Item
+	*/
 	public String printItem(String getItem){
 		Item response;
 		try {
 			response = getProduct(Integer.parseInt(getItem));
 		} catch (NumberFormatException e) {
 	    	System.out.println(e);	
-	    	response = new Item(); // Return blank item if we cannot find the product
+	    	response = new Item(); /// Return blank item if we cannot find the product
 		}
 		
 		return gson.toJson(response);

@@ -7,11 +7,6 @@ public class UnitTests {
 	
 	Gson gson = new Gson();
 	Store store = new Store();
-	
-	int BUTTER = 80; // cart ID 1
-	int MILK = 115; // cart ID 2
-	int BREAD = 100; // cart ID 3
-
 
 	@Test
 	public void testButterBreadOffer(){
@@ -59,7 +54,7 @@ public class UnitTests {
 		assertEquals(json.priceWithDiscount, 295);	
 	}
 	
-	// TC2
+//	// TC2
 	@Test
 	public void testScenarioTwo(){
 

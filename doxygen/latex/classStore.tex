@@ -1,0 +1,81 @@
+\hypertarget{classStore}{}\section{Store Class Reference}
+\label{classStore}\index{Store@{Store}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Item}
+\begin{DoxyCompactList}\small\item\em Using pennies (int) to avoid rounding errors (floats and double) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Item \hyperlink{classStore_a2a867c6b248623eaef6394908d83d276}{get\+Product} (int item\+I\+D)
+\item 
+String \hyperlink{classStore_a941ac7925ad667787e9479bb1ac7efba}{get\+Item\+List} ()
+\item 
+int \hyperlink{classStore_a62f9da7cbdb8138c16f679523e490b86}{get\+Product\+Price} (int item\+I\+D)
+\item 
+String \hyperlink{classStore_a82632f79310e01e1994361b67b7b21c5}{print\+Item} (String get\+Item)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStore_a941ac7925ad667787e9479bb1ac7efba}{}\index{Store@{Store}!get\+Item\+List@{get\+Item\+List}}
+\index{get\+Item\+List@{get\+Item\+List}!Store@{Store}}
+\subsubsection[{get\+Item\+List}]{\setlength{\rightskip}{0pt plus 5cm}String Store.\+get\+Item\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classStore_a941ac7925ad667787e9479bb1ac7efba}
+\begin{DoxyReturn}{Returns}
+String J\+S\+O\+N object of list of Products 
+\end{DoxyReturn}
+\hypertarget{classStore_a2a867c6b248623eaef6394908d83d276}{}\index{Store@{Store}!get\+Product@{get\+Product}}
+\index{get\+Product@{get\+Product}!Store@{Store}}
+\subsubsection[{get\+Product}]{\setlength{\rightskip}{0pt plus 5cm}Item Store.\+get\+Product (
+\begin{DoxyParamCaption}
+\item[{int}]{item\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classStore_a2a867c6b248623eaef6394908d83d276}
+Returns a singular Item based on Item I\+D. On non-\/existent Item, returns an empty one. 
+\begin{DoxyParams}{Parameters}
+{\em int} & item\+I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item 
+\end{DoxyReturn}
+\hypertarget{classStore_a62f9da7cbdb8138c16f679523e490b86}{}\index{Store@{Store}!get\+Product\+Price@{get\+Product\+Price}}
+\index{get\+Product\+Price@{get\+Product\+Price}!Store@{Store}}
+\subsubsection[{get\+Product\+Price}]{\setlength{\rightskip}{0pt plus 5cm}int Store.\+get\+Product\+Price (
+\begin{DoxyParamCaption}
+\item[{int}]{item\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classStore_a62f9da7cbdb8138c16f679523e490b86}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & Item\+I\+D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int price in pence of item 
+\end{DoxyReturn}
+\hypertarget{classStore_a82632f79310e01e1994361b67b7b21c5}{}\index{Store@{Store}!print\+Item@{print\+Item}}
+\index{print\+Item@{print\+Item}!Store@{Store}}
+\subsubsection[{print\+Item}]{\setlength{\rightskip}{0pt plus 5cm}String Store.\+print\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{get\+Item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classStore_a82632f79310e01e1994361b67b7b21c5}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & get\+Item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String J\+S\+O\+N object of Item 
+\end{DoxyReturn}
+Return blank item if we cannot find the product 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/Store.\+java\end{DoxyCompactItemize}
