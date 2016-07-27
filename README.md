@@ -1,4 +1,4 @@
-Application for Patrick Schlumberger Socha
+Application for Patrick Socha
 ==========================================
 *Email: first name [at] psocha.co.uk*
 
